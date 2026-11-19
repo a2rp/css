@@ -79,7 +79,7 @@ Components can then use the semantic token, while the palette value can change i
 
 ## Provide a fallback
 
-The second argument to `var()` is a fallback value. It is used when the referenced custom property is missing or has no usable value:
+The second argument to `var()` is a fallback value. It is used when the referenced custom property is missing or has the guaranteed-invalid value:
 
 ~~~css
 .notice {
@@ -228,7 +228,7 @@ Registration lets the browser validate values for the declared syntax and use th
 - Custom properties start with `--` and are used through `var()`.
 - They follow the cascade and normally inherit, which makes scoped theme overrides possible.
 - Design tokens give repeated design choices meaningful names.
-- A fallback is used when a custom property's value is missing or unusable, but it does not fix every invalid substituted value.
+- A fallback is used when a custom property is missing or has the guaranteed-invalid value, but it does not fix every invalid substituted value.
 - Store complete CSS values, including their units.
 - `@property` can add syntax checking, explicit inheritance, and an initial value when a registered token needs them.
 
