@@ -252,7 +252,6 @@ html {
 }
 
 body {
-  min-width: 320px;
   min-height: 100vh;
   background: var(--color-paper);
   color: var(--color-ink);
@@ -527,9 +526,8 @@ a:focus-visible {
 }
 
 .content-section--tinted {
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  padding-inline: max(1rem, calc((100vw - var(--content-width)) / 2));
+  padding: clamp(1.5rem, 4vw, 3rem);
+  border-radius: 1rem;
   background: var(--color-tint);
 }
 
