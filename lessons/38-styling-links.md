@@ -227,4 +227,4 @@ Use a specific class or container selector when the same site needs different li
 
 | Previous chapter | Chapter Q&A | Chapter example | Next chapter |
 | :--- | :--- | :--- | :--- |
-| [37 - Styling tables](37-styling-tables.md) | [Q&A](../qnas/38-styling-links.md) | [Example](../examples/38-styling-links.md) | [39 - Styling forms and controls](38-styling-links.md) |
+| [37 - Styling tables](37-styling-tables.md) | [Q&A](../qnas/38-styling-links.md) | [Example](../examples/38-styling-links.md) | [39 - Styling forms and controls](39-styling-forms-and-controls.md) |
