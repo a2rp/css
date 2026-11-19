@@ -159,7 +159,7 @@ A rule is drawn only between columns in the same multi-column line. It does not 
 }
 ~~~
 
-A constrained block size gives the browser a column height to work with. Without a useful height constraint, `column-fill` may not produce the visual difference you expect. With `auto`, later columns may be empty if all content fits in the first column's available height.
+A constrained block size gives the browser a column height to work with. Without a useful height constraint, `column-fill` may not produce the visual difference you expect. With `auto` in a container with a definite block size, content fills columns sequentially. If it all fits into the first column, later columns can remain empty.
 
 For ordinary article text, balanced columns often look natural. Sequential filling can help when a design has a known height or when content should proceed from the start of one column to the next.
 
@@ -342,4 +342,4 @@ The heading spans across the multicol container and separates the text flow befo
 
 | Previous chapter | Chapter Q&A | Chapter example | Next chapter |
 | :--- | :--- | :--- | :--- |
-| [28 - Alignment and Gaps](28-alignment-and-gaps.md) | [Q&A](../qnas/29-multi-column-layout.md) | [Example](../examples/29-multi-column-layout.md) | [30 - Responsive Design and Media Queries](29-multi-column-layout.md) |
+| [28 - Alignment and Gaps](28-alignment-and-gaps.md) | [Q&A](../qnas/29-multi-column-layout.md) | [Example](../examples/29-multi-column-layout.md) | [30 - Responsive Design and Media Queries](30-responsive-design-and-media-queries.md) |
