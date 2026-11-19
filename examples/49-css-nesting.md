@@ -249,7 +249,7 @@ Save the code as an HTML file and open it in a browser that supports native CSS 
     </nav>
 
     <section id="more" class="card-list" aria-label="Nesting notes">
-      <article id="second" class="card">
+      <article id="notes" class="card">
         <div class="card__content">
           <h2 class="card__title">Nesting is still CSS</h2>
           <p class="card__copy">The cascade, specificity, source order, and accessible HTML still matter. Nesting organizes selectors; it does not create preprocessor variables or concatenate class names.</p>
