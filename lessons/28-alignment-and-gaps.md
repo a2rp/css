@@ -79,14 +79,14 @@ Content-alignment controls how a container's tracks or flex lines are positioned
 
 These properties do not create extra space. If tracks or flex lines already fill the container, there may be no remaining space to distribute.
 
-| Goal | Grid and Flexbox property |
-| :--- | :--- |
-| Distribute content along inline or main axis | `justify-content` |
-| Distribute content along block or cross axis | `align-content` |
-| Set default item alignment on inline or main axis | `justify-items` |
-| Set default item alignment on block or cross axis | `align-items` |
-| Override one item's inline or main-axis alignment | `justify-self` |
-| Override one item's block or cross-axis alignment | `align-self` |
+| Goal | Property | Layout scope |
+| :--- | :--- | :--- |
+| Distribute content along inline or main axis | `justify-content` | Grid and Flexbox |
+| Distribute content along block or cross axis | `align-content` | Grid and Flexbox, with multiple flex lines |
+| Set default item alignment on inline axis | `justify-items` | Grid |
+| Set default item alignment on block or cross axis | `align-items` | Grid and Flexbox |
+| Override one item's inline-axis alignment | `justify-self` | Grid |
+| Override one item's block or cross-axis alignment | `align-self` | Grid and Flexbox |
 
 ## Alignment values
 
