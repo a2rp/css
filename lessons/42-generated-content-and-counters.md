@@ -100,35 +100,53 @@ A counter does not display anything until a value is used, for example with `cou
 
 ## Number nested sections
 
-When a counter with the same name is reset inside another instance, CSS creates a nested counter. The `counters()` function can display each level:
+A document outline can use separate counters for chapter and subsection levels. Reset the subsection counter when a new chapter starts:
 
 ~~~css
 .outline {
-  counter-reset: section;
+  counter-reset: chapter;
 }
 
 .outline h2 {
-  counter-increment: section;
-  counter-reset: subsection;
+  counter-increment: chapter;
+  counter-reset: section;
 }
 
 .outline h3 {
-  counter-increment: subsection;
+  counter-increment: section;
 }
 
 .outline h2::before {
-  content: counter(section) " ";
+  content: counter(chapter) " ";
 }
 
 .outline h3::before {
-  content: counters(section, ".") " ";
+  content: counter(chapter) "." counter(section) " ";
 }
 ~~~
 
-A nested heading can display a value such as `2.1`. `counter(section)` returns the innermost value with that name. `counters(section, ".")` joins the nested values from outermost to innermost with a period.
+A subsection under chapter 2 can now display `2.1`. Each `h2` starts its section counter again. The numbering is still generated presentation, so keep meaningful headings in HTML.
 
-Counter scope follows the document tree and reset locations. A reset inside a nested section starts a new counter level. When debugging numbering, check where each counter is reset and which elements increment it.
+The `counters()` function is especially useful when the same counter is nested, such as in a nested ordered list:
 
+~~~css
+ol.numbered {
+  counter-reset: item;
+  list-style: none;
+}
+
+ol.numbered li {
+  counter-increment: item;
+}
+
+ol.numbered li::before {
+  content: counters(item, ".") " ";
+}
+~~~
+
+Give the `numbered` class to each nested `<ol>`. Each list resets its own `item` counter. `counters(item, ".")` joins the nested values from outermost to innermost, so a child item can display `2.1`. By contrast, `counter(item)` displays only the innermost counter value.
+
+Counter scope follows the document tree and reset locations. When debugging numbering, check where each counter is reset and which elements increment it.
 ## Choose a counter style
 
 The optional second argument to `counter()` selects a counter style:
