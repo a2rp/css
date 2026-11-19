@@ -217,6 +217,14 @@ The numeric prefixes make the intended sequence visible in the file list. Descri
     outline: 3px solid #a34d13;
     outline-offset: 3px;
   }
+
+  .eyebrow {
+    color: var(--color-accent);
+    font-size: 0.78rem;
+    font-weight: 750;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
 }
 ~~~
 
@@ -406,8 +414,7 @@ The numeric prefixes make the intended sequence visible in the file list. Descri
     background: var(--color-surface);
   }
 
-  .article-card__category,
-  .eyebrow {
+  .article-card__category {
     color: var(--color-accent);
     font-size: 0.78rem;
     font-weight: 750;
