@@ -215,7 +215,7 @@ Save the code as an HTML file and open it in a browser that supports native CSS 
     </header>
 
     <section class="card-list" aria-label="Learning cards">
-      <article class="card card--featured">
+      <article id="first" class="card card--featured">
         <div class="card__art" aria-hidden="true"></div>
         <div class="card__content">
           <h2 class="card__title">Keep related rules together</h2>
@@ -228,7 +228,7 @@ Save the code as an HTML file and open it in a browser that supports native CSS 
         </div>
       </article>
 
-      <article class="card">
+      <article id="second" class="card">
         <div class="card__art" aria-hidden="true"></div>
         <div class="card__content">
           <h2 class="card__title">Use the parent selector</h2>
@@ -249,7 +249,7 @@ Save the code as an HTML file and open it in a browser that supports native CSS 
     </nav>
 
     <section id="more" class="card-list" aria-label="Nesting notes">
-      <article class="card">
+      <article id="second" class="card">
         <div class="card__content">
           <h2 class="card__title">Nesting is still CSS</h2>
           <p class="card__copy">The cascade, specificity, source order, and accessible HTML still matter. Nesting organizes selectors; it does not create preprocessor variables or concatenate class names.</p>
