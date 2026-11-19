@@ -390,4 +390,4 @@ Create a small notice component with a base style, a warning variation, a title 
 
 | Previous chapter | Chapter Q&A | Chapter example | Next chapter |
 | :--- | :--- | :--- | :--- |
-| [59 - Responsive typography and fluid sizing](../qnas/59-responsive-typography-and-fluid-sizing.md) | [Lesson](../lessons/60-css-architecture-and-naming.md) | [Example](../examples/60-css-architecture-and-naming.md) | [61 - Resets and base styles](../qnas/61-resets-and-base-styles.md) |
+| [59 - Responsive typography and fluid sizing](../lessons/59-responsive-typography-and-fluid-sizing.md) | [Q&A](60-css-architecture-and-naming.md) | [Example](../examples/60-css-architecture-and-naming.md) | [61 - Resets and base styles](../lessons/61-resets-and-base-styles.md) |
