@@ -50,7 +50,7 @@ Save these two files in the same folder and open `index.html` in a browser.
           <p class="feature-card__text">
             Give content clear sections and headings before adding visual effects.
           </p>
-          <a class="feature-card__link" href="#structure">Read the structure notes</a>
+          <a class="feature-card__link" href="#structure">Check content order</a>
         </article>
 
         <article class="feature-card">
@@ -59,7 +59,7 @@ Save these two files in the same folder and open `index.html` in a browser.
           <p class="feature-card__text">
             Start with a layout that keeps every card readable in a single column.
           </p>
-          <a class="feature-card__link" href="#layout">Read the layout notes</a>
+          <a class="feature-card__link" href="#layout">Check the layout</a>
         </article>
 
         <article class="feature-card">
@@ -69,7 +69,7 @@ Save these two files in the same folder and open `index.html` in a browser.
             Validate the stylesheet, then test the page in the environments that
             matter to its users.
           </p>
-          <a class="feature-card__link" href="#testing">Read the testing notes</a>
+          <a class="feature-card__link" href="#testing">Check the testing plan</a>
         </article>
       </div>
     </section>
@@ -77,9 +77,9 @@ Save these two files in the same folder and open `index.html` in a browser.
     <section class="testing-notes" id="testing" aria-labelledby="testing-title">
       <h2 id="testing-title">What to verify</h2>
       <ul>
-        <li>All three cards remain in a sensible reading order.</li>
+        <li id="structure">All three cards remain in a sensible reading order.</li>
         <li>Links remain visible and usable with a keyboard.</li>
-        <li>The grid fits narrow and wide viewports without unwanted overflow.</li>
+        <li id="layout">The grid fits narrow and wide viewports without unwanted overflow.</li>
         <li>The page remains readable when the grid enhancement is unavailable.</li>
       </ul>
     </section>
@@ -88,7 +88,7 @@ Save these two files in the same folder and open `index.html` in a browser.
 </html>
 ~~~
 
-The fragment links identify sections by name for this practice page. If you turn them into navigation for a real page, add matching section IDs or replace them with the intended destinations.
+The first two card links jump to their matching checklist items. The last card link jumps to the testing checklist section.
 
 ### styles.css
 
@@ -99,7 +99,7 @@ The fragment links identify sections by name for this practice page. If you turn
   background: #f2f5f3;
   color: #202a24;
   font-synthesis: none;
-  text-rendering: optimizeLegibility;
+
 }
 
 * {
