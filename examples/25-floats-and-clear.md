@@ -86,6 +86,7 @@ Copy the complete HTML into a file named index.html and open it in a browser. Gi
     }
 
     .story {
+      display: flow-root;
       padding: 1rem;
       border: 1px solid #dbe3ef;
       border-radius: 0.65rem;
@@ -94,12 +95,6 @@ Copy the complete HTML into a file named index.html and open it in a browser. Gi
 
     .story + .story {
       margin-block-start: 1rem;
-    }
-
-    .story::after {
-      display: block;
-      clear: both;
-      content: "";
     }
 
     .story-figure {
@@ -178,16 +173,11 @@ Copy the complete HTML into a file named index.html and open it in a browser. Gi
     }
 
     .clear-demo {
+      display: flow-root;
       padding: 1rem;
       border: 1px solid #dbe3ef;
       border-radius: 0.65rem;
       background: #f8fafc;
-    }
-
-    .clear-demo::after {
-      display: block;
-      clear: both;
-      content: "";
     }
 
     .callout {
@@ -361,7 +351,7 @@ The figures use float: inline-start and float: inline-end. These values place th
 
 The wrapper in section 2 uses display: flow-root. That establishes a block formatting context and makes the wrapper contain its floated children. This is different from clearing a following element.
 
-The callout in section 3 is also floated. The final note uses clear: both to move below earlier left and right floats in the same block formatting context. The demonstration wrapper uses a pseudo-element to contain the callout, so its border still encloses the float. The note's clear declaration controls the note position.
+The callout in section 3 is also floated. The final note uses clear: both to move below earlier left and right floats in the same block formatting context. The clear-demo wrapper uses flow-root to contain the callout, so its border still encloses the float. The note's clear declaration controls the note position.
 
 The card collection uses CSS Grid. Floats can wrap inline prose around a box, but they do not provide responsive card columns with explicit gaps and tracks.
 
