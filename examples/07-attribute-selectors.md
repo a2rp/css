@@ -84,7 +84,12 @@ Copy this complete document into a file named `index.html`, then open it in a br
       padding-left: 0.75rem;
     }
 
-    [class~="featured"] {
+    [class~="card"] {
+      padding: 1rem;
+    }
+
+    [class~="featured"],
+    [data-kind~="featured"] {
       color: #9a3412;
     }
 
@@ -148,6 +153,7 @@ The page displays a centered white resource panel with a sign-up form, download 
 - Both download links have a pale blue background because their `data-kind` values include the complete token `download`.
 - The PDF link has a bold label and a blue bottom border because its `href` ends with `.pdf`.
 - The English paragraph has a teal left border because its language value is `en-US`.
+- Only the featured card receives extra padding because its class list includes `card` as a complete token.
 - The featured card and the download link with a `featured` token have dark orange text.
 - Both the card and the postcard have dashed outlines. The substring selector finds `card` inside both class values.
 - The `OPEN` state paragraph has a green background because the selector uses the `i` flag.
@@ -188,10 +194,11 @@ The `^=` operator matches an `href` that begins with `/files/`, so it matches bo
 
 ```css
 a[data-kind~="download"] { ... }
-[class~="featured"] { ... }
+[class~="featured"],
+[data-kind~="featured"] { ... }
 ```
 
-The `~=` operator matches a complete word from a whitespace-separated value. Both `data-kind` values include `download`; the second also includes `featured`. The card's class list includes `featured` too.
+The `~=` operator matches a complete word from a whitespace-separated value. Both `data-kind` values include `download`. The `[class~="featured"]` selector matches the card, and `[data-kind~="featured"]` matches the second link.
 
 ### Substring
 
