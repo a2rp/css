@@ -154,15 +154,15 @@ Use this markup for Questions 29 to 33:
 
 ### 29. Which list item matches `.task:nth-child(even)`?
 
-**Answer:** “Try the examples.” It is the second element child, and its class includes `task`.
+**Answer:** â€œTry the examples.â€ It is the second element child, and its class includes `task`.
 
 ### 30. Which list items match `.task:nth-child(odd)`?
 
-**Answer:** “Read the lesson” and “Review the notes.” They are the first and third element children.
+**Answer:** â€œRead the lessonâ€ and â€œReview the notes.â€ They are the first and third element children.
 
 ### 31. Which elements match `.task:not(.complete)`?
 
-**Answer:** “Try the examples.” It has the `task` class and does not have the `complete` class.
+**Answer:** â€œTry the examples.â€ It has the `task` class and does not have the `complete` class.
 
 ### 32. Write a selector for the second `li` among list item siblings.
 
@@ -176,9 +176,17 @@ li:nth-of-type(2) {
 
 **Explanation:** `:nth-of-type(2)` counts only siblings with the same element type, in this case `li` elements.
 
-### 33. If a `<h2>` is added before the list items, which list item matches `li:first-child`? Which matches `li:first-of-type`?
+### 33. In this valid container, which selector matches the first paragraph?
 
-**Answer:** No list item matches `li:first-child`, because the heading is the first element child. The first `li` matches `li:first-of-type` because it is the first list item sibling of its type.
+```html
+<div>
+  <h2>Tasks</h2>
+  <p>First paragraph.</p>
+  <p>Second paragraph.</p>
+</div>
+```
+
+**Answer:** `p:first-of-type` matches “First paragraph.” `p:first-child` matches neither paragraph because the `h2` is the first element child.
 
 ## Fix the selector
 
