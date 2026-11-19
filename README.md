@@ -2,6 +2,10 @@
 
 These are my personal learning notes, shaped by what I study and practice. Here, I am gathering CSS concepts into a clear, practical guide that I can revisit and share.
 
+## Reference
+
+[CSS reference](css-reference.md)
+
 ## Lessons
 
 | No. | Lesson |
