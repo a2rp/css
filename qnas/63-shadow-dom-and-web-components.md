@@ -352,14 +352,18 @@ Design a plant-card component API with a title slot, a default body slot, a feat
 
 **One possible API:**
 
-~~~
+Page markup:
+
+~~~html
 <plant-card featured>
     <span slot="title">Sweet basil</span>
     <p>A fragrant herb for a sunny container.</p>
 </plant-card>
 ~~~
 
-~~~
+Shadow stylesheet:
+
+~~~css
 :host {
     display: block;
     color: var(--plant-card-text, #26362c);
@@ -373,11 +377,11 @@ Design a plant-card component API with a title slot, a default body slot, a feat
 .card {
     padding: 1rem;
 }
+~~~
 
-h2[part="title"] {
-    font-size: 1.4rem;
-}
+Shadow template:
 
+~~~html
 <article class="card">
     <h2 part="title"><slot name="title">Untitled</slot></h2>
     <slot>Details are not available.</slot>
@@ -385,7 +389,6 @@ h2[part="title"] {
 ~~~
 
 **Explanation:** The page supplies content through slots and opts into a documented featured state. Custom properties provide theme values. The title is exposed as a part. The internal card class stays private.
-
 ## Chapter navigation
 
 | Previous chapter | Chapter Q&A | Chapter example | Next chapter |
