@@ -79,7 +79,3 @@ These are my personal learning notes, shaped by what I study and practice. Here,
 | 67 | [CSS performance](lessons/67-css-performance.md) | [Open QnA](qnas/67-css-performance.md) | [Open Example](examples/67-css-performance.md) |
 | 68 | [Practical page projects](lessons/68-practical-page-projects.md) | [Open QnA](qnas/68-practical-page-projects.md) | [Open Example](examples/68-practical-page-projects.md) |
 | 69 | [CSS quick reference and glossary](lessons/69-css-reference-and-glossary.md) | [Open QnA](qnas/69-css-reference-and-glossary.md) | [Open Example](examples/69-css-reference-and-glossary.md) |
-
-## My Links
-
-[My Links repository](https://github.com/a2rp/ashish-links)
