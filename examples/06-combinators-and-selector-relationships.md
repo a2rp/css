@@ -83,7 +83,7 @@ Copy the complete document into a file named `index.html`, then open it in a bro
 
 ## Expected output
 
-The browser shows a centered white panel on a pale background. Inside it are the label “Selector relationships,” the heading “Combinators in context,” two highlighted direct-child paragraphs, a one-item list, and a nested pale-blue box containing the final paragraph.
+The browser shows a centered white panel on a pale background. Inside it are the label â€œSelector relationships,â€ the heading â€œCombinators in context,â€ three highlighted direct-child paragraphs, including the label before the heading, a one-item list, and a nested pale-blue box containing the final paragraph.
 
 The paragraph immediately after the heading has a blue left border. Both paragraphs that follow the heading as siblings have blue text. The nested paragraph remains slate-colored because it is a descendant of the panel, but it is not a sibling of the heading.
 
@@ -93,7 +93,7 @@ The paragraph immediately after the heading has a blue left border. Both paragra
 | --- | --- | --- |
 | `.panel p` | All four paragraphs | Every paragraph is somewhere inside `.panel`, including the nested one. |
 | `.panel > p` | The first, second, and third paragraphs | These paragraphs are direct children of `.panel`. The final paragraph is inside `.nested`. |
-| `h1 + p` | “This paragraph immediately follows the heading.” | It is the element sibling immediately after the `h1`. |
+| `h1 + p` | â€œThis paragraph immediately follows the heading.â€ | It is the element sibling immediately after the `h1`. |
 | `h1 ~ p` | The first and second paragraphs after the heading | They are later paragraph siblings of the `h1`. The list between them does not prevent a match. |
 
 The label paragraph appears before the heading. It matches `.panel p` and `.panel > p`, but neither sibling selector because it comes before the heading.
@@ -109,7 +109,7 @@ The label paragraph appears before the heading. It matches `.panel p` and `.pane
 }
 ```
 
-The space means “anywhere inside.” This rule sets the base color and line height for every paragraph in the panel, including the nested paragraph.
+The space means â€œanywhere inside.â€ This rule sets the base color and line height for every paragraph in the panel, including the nested paragraph.
 
 ### Child selector
 
