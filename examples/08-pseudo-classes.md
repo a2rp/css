@@ -180,7 +180,7 @@ Copy the complete document into a file named `index.html`, then open it in a bro
         <input type="checkbox" name="updates" checked>
         Receive learning updates
       </label>
-      <button type="submit">Save settings</button>
+      <button type="button">Enabled button</button>
       <button type="button" disabled>Unavailable action</button>
     </form>
 
@@ -222,7 +222,7 @@ The browser displays a centered white page with an account form, a featured prof
 - The enabled button darkens on hover and moves slightly while active. The disabled button stays dim and does not get the enabled-button pointer treatment.
 - The profile card has a teal left edge because it contains a direct child with the `status` class.
 - The second and fourth task items have a pale background, and the first task is bold.
-- After following “Jump to details,” the details section gets a pale yellow background and an orange border because it matches `:target`.
+- After following â€œJump to details,â€ the details section gets a pale yellow background and an orange border because it matches `:target`.
 
 ## How each pseudo-class works
 
