@@ -43,16 +43,12 @@ Copy the complete document into a file named `index.html`, then open it in a bro
       color: #173b68;
     }
 
-    p {
-      color: #15803d;
-    }
-
     #specificity-demo {
       color: #b91c1c;
     }
 
-    .page p {
-      color: #2563eb;
+    p {
+      color: #15803d;
     }
 
     .source-order {
@@ -123,7 +119,7 @@ Copy the complete document into a file named `index.html`, then open it in a bro
 
     <h2>Specificity and source order</h2>
     <p id="specificity-demo">
-      The ID rule wins over later type and class-plus-type rules.
+      The ID rule wins over the later type selector.
     </p>
     <p class="source-order">
       This text is purple because the later equal-specificity rule wins.
@@ -160,7 +156,7 @@ Copy the complete document into a file named `index.html`, then open it in a bro
 
 The browser shows a centered white page with examples grouped under headings.
 
-- The first demonstration paragraph is red. Its ID selector beats the later type and class-plus-type selectors.
+- The first demonstration paragraph is red. Its ID selector beats the later type selector.
 - The source-order paragraph is purple. Two `.source-order` rules have equal priority, so the later color wins.
 - The important-rule paragraph is blue. The class rule's `!important` declaration beats the normal ID declaration in the same author layer.
 - The property-by-property paragraph is bold and red. The class rule supplies bold text, while the ID rule supplies the winning color.
@@ -176,20 +172,16 @@ The `!important` declaration is included to demonstrate how priority works. Avoi
 ### A more specific selector beats later lower-specificity rules
 
 ```css
-p {
-  color: #15803d;
-}
-
 #specificity-demo {
   color: #b91c1c;
 }
 
-.page p {
-  color: #2563eb;
+p {
+  color: #15803d;
 }
 ```
 
-All three rules can match the paragraph. The ID selector has greater specificity than the type selector and the class-plus-type selector. Its red color wins even though `.page p` appears later.
+Both rules can match the paragraph. The ID selector has greater specificity than the type selector, so red wins even though the `p` rule appears later.
 
 ### Source order breaks a tie
 
@@ -276,7 +268,7 @@ The CSS-defined initial value for `display` is `inline`. This overrides the brow
 
 ## Try these changes
 
-1. Remove `id="specificity-demo"`. The paragraph loses the ID selector match and becomes blue from `.page p`.
+1. Remove `id="specificity-demo"`. The paragraph loses the ID selector match and becomes green from the `p` rule.
 2. Move the second `.source-order` rule before the first one. The paragraph becomes blue because the later equal-specificity declaration changes.
 3. Remove `!important` from `.important-rule`. The normal ID rule then wins and makes the priority paragraph red.
 4. Remove `#per-property` from the paragraph. The class rule then supplies both its blue color and bold weight.
