@@ -135,7 +135,7 @@ Copy the code into an HTML file and open it in a browser. The small SVG illustra
 
     .fit-cover img {
       object-fit: cover;
-      object-position: 72% 42%;
+      object-position: 50% 25%;
     }
 
     .fit-contain img {
@@ -201,7 +201,7 @@ Copy the code into an HTML file and open it in a browser. The small SVG illustra
             alt="A stylized landscape with a sun above green mountain ridges"
           >
         </figure>
-        <p><code>cover</code> fills the frame and crops the image. The position keeps the sun in view.</p>
+        <p><code>cover</code> fills the frame and crops the image. The vertical position keeps the sun in view.</p>
       </article>
 
       <article class="gallery-card">
@@ -259,7 +259,7 @@ Copy the code into an HTML file and open it in a browser. The small SVG illustra
 - Each `.media-frame` uses `aspect-ratio: 16 / 9` to give the frame a consistent shape.
 - The image fills the frame's box with `width: 100%` and `height: 100%`.
 - `object-fit` controls how the 4:3 image content fits inside the 16:9 image box.
-- The cover example uses `object-position: 72% 42%` to shift the crop toward the sun.
+- The cover example uses `object-position: 50% 25%` to shift the vertical crop toward the sun.
 - The contain example preserves all image content and exposes the frame background around it.
 - The fill example distorts the image because it forces both dimensions to match the frame.
 - The scale-down example reduces the image to fit, without enlarging it past its natural size.
