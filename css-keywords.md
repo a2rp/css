@@ -4,7 +4,7 @@
 
 CSS has at-keywords, property names, selector syntax, functions, units, and value keywords. Their meaning depends on where they appear and which property or rule uses them. This guide indexes common names in this course. It is not a complete list of every CSS property or every possible value because CSS grows through modules.
 
-Use the [CSS reference](css-reference.md) for detailed examples and property groups.
+Use the [CSS reference and glossary chapter](lessons/69-css-reference-and-glossary.md) for detailed examples and property groups.
 
 ## Rule syntax
 
@@ -194,6 +194,6 @@ Use media features to adapt the presentation. Respect reduced motion and contras
 - [Custom properties](lessons/41-custom-properties-and-design-tokens.md)
 - [At-rules](lessons/50-at-rules-and-imports.md)
 - [Accessible CSS](lessons/53-accessible-css-and-user-preferences.md)
-- [CSS reference](css-reference.md)
+- [CSS reference and glossary chapter](lessons/69-css-reference-and-glossary.md)
 - [CSS summary](css-summary.md)
 - [Back to the README](README.md)

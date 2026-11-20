@@ -2,7 +2,7 @@
 
 CSS (Cascading Style Sheets) controls how HTML content is presented. It describes colors, type, spacing, layout, responsive behavior, and interaction states. The browser matches selectors to elements, applies declarations, and resolves competing values through the cascade.
 
-This guide summarizes the course. The detailed [CSS reference](css-reference.md) groups syntax, selectors, values, at-rules, properties, responsive design, accessibility, and terms. The [README](README.md#lessons) links every lesson, Q&A, and example.
+This guide summarizes the course. For detailed syntax, selectors, values, at-rules, properties, responsive design, accessibility, and terms, see the [CSS reference and glossary chapter](lessons/69-css-reference-and-glossary.md). The [README](README.md#lessons) links every lesson, Q&A, and example.
 
 ## Connect CSS to a page
 
