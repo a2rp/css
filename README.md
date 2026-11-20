@@ -2,6 +2,11 @@
 
 These are my personal learning notes, shaped by what I study and practice. Here, I am gathering CSS concepts into a clear, practical guide that I can revisit and share.
 
+## Quick guides
+
+- [CSS summary](css-summary.md)
+- [CSS keywords and syntax terms](css-keywords.md)
+
 ## Reference
 
 [CSS reference](css-reference.md)
